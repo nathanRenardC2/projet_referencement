@@ -8,21 +8,21 @@ const VenteVelos = () => {
         {
             title: "Vélo de route",
             description: "Le vélo de route Lapierre est conçu pour les cyclistes passionnés cherchant performance et confort. Avec son cadre en aluminium léger et rigide, il offre une conduite rapide et réactive. Équipé de composants de qualité supérieure, ce vélo est parfait pour les sorties longues et les entraînements intensifs. Sa géométrie ajustée et son design élégant en font également un choix populaire pour les cyclistes recherchant un look professionnel sur la route.",
-            image: "https://media.intersport.fr/is/image/intersportfr/5008712EEO_PR?$produit_l$",
+            image: "https://www.cdiscount.com/pdt2/8/1/9/1/700x700/mp45006819/rw/winice-velo-electrique-de-montagne-26-velo-vtt-h.jpg",
             prix: "1000",
             tag: "Vélo de route éléctrique"
         },
         {
-            title: "Vélo de route",
-            description: "Le vélo de route Lapierre est conçu pour les cyclistes passionnés cherchant performance et confort. Avec son cadre en aluminium léger et rigide, il offre une conduite rapide et réactive. Équipé de composants de qualité supérieure, ce vélo est parfait pour les sorties longues et les entraînements intensifs. Sa géométrie ajustée et son design élégant en font également un choix populaire pour les cyclistes recherchant un look professionnel sur la route.",
-            image: "https://media.intersport.fr/is/image/intersportfr/5008712EEO_PR?$produit_l$",
+            title: "Vélo de route pour enfant",
+            description: "Vélo pour enfant Lapierre - Conçu pour les jeunes cyclistes ambitieux, ce vélo de route a un cadre en aluminium léger pour une conduite rapide et réactive. Équipé de composants de qualité, idéal pour les sorties longues et les entraînements. Design élégant pour un look professionnel sur la route.",
+            image: "https://www.cdiscount.com/pdt2/2/5/1/1/1200x1200/mp35508251/rw/velo-enfant-evolutive-20-pouces-bikestar-pour.jpg",
             prix: "700",
             tag: "Vélo de route éléctrique"
         },
         {
-            title: "Vélo de route",
-            description: "Le vélo de route Lapierre est conçu pour les cyclistes passionnés cherchant performance et confort. Avec son cadre en aluminium léger et rigide, il offre une conduite rapide et réactive. Équipé de composants de qualité supérieure, ce vélo est parfait pour les sorties longues et les entraînements intensifs. Sa géométrie ajustée et son design élégant en font également un choix populaire pour les cyclistes recherchant un look professionnel sur la route.",
-            image: "https://media.intersport.fr/is/image/intersportfr/5008712EEO_PR?$produit_l$",
+            title: "Vélo tout terrain",
+            description: "Roulez avec confiance sur le VTT tout-terrain de Lapierre. Ce vélo hautes performances et confortable est doté d'un cadre en aluminium léger et rigide pour une conduite rapide et réactive. Avec des composants de qualité supérieure, ce vélo est parfait pour les sorties longues et les entraînements intensifs. Sa géométrie ajustée et son design élégant en font également un choix populaire pour les cyclistes recherchant un look professionnel sur la route. Obtenez le vôtre dès maintenant pour seulement 1500 ! Expérimentez la puissance du VTT électrique tout-terrain.",
+            image: "https://wegoboard.com/6077-large_default/velo-electrique-fly770.jpg",
             prix: "1500",
             tag: "VTT éléctrique"
         },

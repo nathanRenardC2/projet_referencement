@@ -26,7 +26,7 @@ const Entretien = () => {
                         <div className="box-content w-full border-4 flex flex-col justify-center items-center my-6 w-2/3 md:w-1/5 p-4">
                             <h2 className="text-2xl font-bold text-gray-500">La batterie</h2>
                             <img src={batterie} alt="" className="w-8 py-3" />
-                            <p className="text-justify px-3">La batterie est le cœur de votre vélo électrique, il est donc important de la recharger et de la stocker correctement.
+                            <p className="text-justify px-3">La batterie 36v est le cœur de votre vélo électrique, il est donc important de la recharger et de la stocker correctement.
                             Assurez-vous de ne pas la laisser se décharger complètement et de la garder dans un endroit sec et frais pour une durée
                             de vie maximale.</p>
                         </div>

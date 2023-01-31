@@ -32,7 +32,7 @@ const Home = () => {
             {
                 id: "1",
                 title: "Votre vélo en 1 clic",
-                description: "Découvrez VéloEco+ : l'application pour acheter ou louer un vélo en toute simplicité. Choisissez parmi une large sélection de vélos de qualité pour répondre à vos besoins.",
+                description: "Découvrez VéloEco+ : l'application pour acheter ou louer un vélo sur Grenoble en toute simplicité. Choisissez parmi une large sélection de vélos de qualité pour répondre à vos besoins.",
                 image: svg1
             },
             {

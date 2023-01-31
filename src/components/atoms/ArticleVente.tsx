@@ -13,7 +13,7 @@ const ArticleVente = ({title, description, image, prix, tag} : IArticleProps) =>
             <article className="w-full p-4 cursor-pointer">
                 <section className="c-card block bg-white shadow-lg hover:shadow-xl rounded-lg overflow-hidden">
                     <div className="relative pb-48 overflow-hidden">
-                        <img className="absolute inset-0 h-full w-full object-scale-down" src={image}
+                        <img className="absolute h-full w-full object-scale-down" src={image}
                             alt="" />
                     </div>
                     <div className="p-4">
@@ -22,7 +22,7 @@ const ArticleVente = ({title, description, image, prix, tag} : IArticleProps) =>
                         <span
                             className="inline-block px-2 py-1 leading-none bg-red-200 text-red-800 rounded-full font-semibold uppercase tracking-wide text-xs ml-2">Vente</span>
                         <h2 className="mt-2 mb-2  font-bold">{title}</h2>
-                        <p className="text-sm">{description}</p>
+                        <p className="text-sm text-justify">{description.slice(0, 280)}...</p>
                         <div className="mt-3 flex items-center">
                             <span className="text-sm font-semibold">prix</span>&nbsp;<span
                                 className="font-bold text-xl">{prix}</span>&nbsp;<span className="text-sm font-semibold">€</span>
