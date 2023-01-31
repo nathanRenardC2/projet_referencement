@@ -132,7 +132,7 @@ const Home = ({pageName} : IVenteVelosProps) => {
                 <h2 className="text-4xl">Partenaires</h2>
                 <hr className="my-4 border rounded border-gray-300" />
                 <div className="flex flex-col md:flex-row justify-center items-center pt-10 md:px-36">
-                    <a className="flex flex-col justify-center items-center mr-20 mb-5 md:mb-0 w-96" href="https://www.google.com">
+                    <a className="flex flex-col justify-center items-center mr-20 mb-5 md:mb-0 w-96" href="https://durabilitrip.netlify.app/">
                         <img src={logo_durabilitrip} alt="logo partenaire Durabilitrip" />
                     </a>
                     <a className="flex flex-col justify-center items-center mr-20 mb-5 md:mb-0 w-96" href="https://www.intersport.fr/">
