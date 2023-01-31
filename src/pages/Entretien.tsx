@@ -7,7 +7,7 @@ import water from "../assets/images/water-outline.svg";
 import batterie from "../assets/images/batterie-outline.svg";
 import Layout from "../components/template/Layout";
 
-const Entretient = () => {
+const Entretien = () => {
     return (
         <Layout>
             <main className="flex flex-col justify-center items-center pt-20 py-6">
@@ -26,14 +26,14 @@ const Entretient = () => {
                         <div className="box-content w-full border-4 flex flex-col justify-center items-center my-6 w-2/3 md:w-1/5 p-4">
                             <h2 className="text-2xl font-bold text-gray-500">La batterie</h2>
                             <img src={batterie} alt="" className="w-8 py-3" />
-                            <p className="text-justify px-3">La batterie est le cœur de votre vélo électrique, il est donc important de la charger et de la stocker correctement.
-                            Assurez-vous de ne pas la laisser se décharger complètement et de la stocker dans un endroit sec et frais pour une durée
+                            <p className="text-justify px-3">La batterie est le cœur de votre vélo électrique, il est donc important de la recharger et de la stocker correctement.
+                            Assurez-vous de ne pas la laisser se décharger complètement et de la garder dans un endroit sec et frais pour une durée
                             de vie maximale.</p>
                         </div>
                         <div className="box-content w-full border-4 flex flex-col justify-center items-center my-6 w-2/3 md:w-1/5 p-4">
-                            <h2 className="text-2xl font-bold text-gray-500">la performance</h2>
+                            <h2 className="text-2xl font-bold text-gray-500">La performance</h2>
                             <img src={sparkles} alt="" className="w-8 py-3" />
-                            <p className="text-justify px-3">Les composants tels que la chaîne peuvent rapidement s'accumuler de la saleté et de la rouille, ce qui peut affecter la
+                            <p className="text-justify px-3">Les composants tels que la chaîne peuvent rapidement accumuler de la saleté et de la rouille, ce qui peut affecter la
                             performance du vélo. Il est donc important de les nettoyer régulièrement pour maintenir un fonctionnement optimal.</p>
                         </div>
                     </section>
@@ -52,7 +52,7 @@ const Entretient = () => {
                             évitant la corrosion. Il est donc important de lubrifier la chaîne régulièrement pour une meilleure performance.</p>
                         </div>
                         <div className="box-content border-4 flex flex-col justify-center items-center my-6 w-2/3 md:w-1/5 p-4">
-                            <h2 className="text-2xl font-bold text-gray-500">le moteur</h2>
+                            <h2 className="text-2xl font-bold text-gray-500">Le moteur</h2>
                             <img src={skull} alt="" className="w-8 py-3" />
                             <p className="text-justify px-3">Si vous remarquez des problèmes de performance avec le moteur ou le système électrique, il est important de les faire
                             inspecter par un professionnel qualifié. Cela peut vous aider à résoudre les problèmes rapidement et à prolonger la
@@ -65,4 +65,4 @@ const Entretient = () => {
     )
 }
 
-export default Entretient
+export default Entretien

@@ -33,8 +33,8 @@ const LocationVelos = () => {
             <div className="pt-10 min-h-screen px-20">
             <div className="grid grid-cols-1 md:grid-cols-3">
                 {articles.map((article, index) => (
-                    <div>
-                        <ArticleLocation key={index} title={article.title} description={article.description} image={article.image} prix={article.prix} tag={article.tag}/>
+                    <div key={index}>
+                        <ArticleLocation key={index} title={article.title} description={article.description} image={article.image} prix={article.prix} tag={article.tag}location={true} />
                     </div>
                     
                 ))}

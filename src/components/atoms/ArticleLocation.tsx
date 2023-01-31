@@ -7,11 +7,12 @@ interface IArticleProps{
     image: any;
     prix: string;
     tag: string;
+    location ?: boolean;
 }
-const ArticleLocation = ({title, description, image, prix, tag} : IArticleProps) => {
+const ArticleLocation = ({title, description, image, prix, tag, location} : IArticleProps) => {
     return (
             <article className="w-full p-4 cursor-pointer">
-                <section className="c-card block bg-white shadow-lg hover:shadow-xl rounded-lg overflow-hidden">
+                <section className="block bg-white shadow-lg hover:shadow-xl rounded-lg overflow-hidden">
                     <div className="relative pb-48 overflow-hidden">
                         <img className="absolute inset-0 h-full w-full object-scale-down" src="https://media.intersport.fr/is/image/intersportfr/5008712EEO_PR?$produit_l$"
                             alt="" />
@@ -25,7 +26,7 @@ const ArticleLocation = ({title, description, image, prix, tag} : IArticleProps)
                         <p className="text-sm">{description}</p>
                         <div className="mt-3 flex items-center">
                             <span className="text-sm font-semibold">prix</span>&nbsp;<span
-                                className="font-bold text-xl">{prix}</span>&nbsp;<span className="text-sm font-semibold">€</span>
+                                className="font-bold text-xl">{prix}</span>&nbsp;<span className="text-sm font-semibold">€{location && "/h"}</span>
                         </div>
                     </div>
                     <div className="p-4 border-t border-b text-xs text-gray-700">
