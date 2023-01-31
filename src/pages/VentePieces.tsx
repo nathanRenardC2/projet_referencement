@@ -34,6 +34,7 @@ const VentePieces = () => {
     return (
         <Layout>
             <div className="pt-10 min-h-screen px-20">
+                <h1 className="text-4xl font-bold text-center mb-3 md:text-start">Vente pièces détachées</h1>
             <div className="grid grid-cols-1 md:grid-cols-3">
                 {articles.map((article, index) => (
                     <div key={index}>

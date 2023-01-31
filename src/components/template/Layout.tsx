@@ -46,7 +46,7 @@ const Layout = ({children} : ILayoutProps) => {
             </div>
         </nav>
 
-      <div className="bg-gray-50">
+      <div className="bg-gray-50 min-h-screen">
         {children}
       </div>
     </>

@@ -2,15 +2,54 @@ import Layout from "../components/template/Layout";
 import firstimage from '../assets/images/landing-image.jpg';
 import secondeImage from '../assets/images/velo-route.jpg';
 import Carousel from "../components/atoms/Carousel";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "../components/atoms/Card";
 import svg1 from '../assets/images/clic.svg';
 import svg2 from '../assets/images/sun.svg';
 import svg3 from '../assets/images/like.svg';
 import logo_durabilitrip from '../assets/images/logo-partenaire.png';
 import logo_intersport from '../assets/images/logo-intersport.png';
+import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay } from "@chakra-ui/react";
 
 const Home = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [googleAnalytics, setGoogleAnalytics] = useState(localStorage.getItem('googleAnalytics') === 'false' ? false : true);
+
+    useEffect(() => {
+        if(localStorage.getItem('googleAnalytics')) {
+            if(localStorage.getItem('googleAnalytics') === 'true') {
+                setGoogleAnalytics(true);
+            } else {
+                setGoogleAnalytics(false);
+            }
+        } else {
+            localStorage.setItem('googleAnalytics', 'false');
+            setIsOpen(true);
+        }
+    }, [googleAnalytics]);
+
+    function handleGoogleAnalytics() {
+        localStorage.setItem('googleAnalytics', 'true');
+        setGoogleAnalytics(true);
+        setIsOpen(false);
+
+        // On ajoute le script de google analytics
+        var head = document.head || document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-8S4FNESNKE";
+        head.appendChild(script);
+        script = document.createElement('script');
+        script.innerHTML = `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-8S4FNESNKE');
+        `;
+        head.appendChild(script);
+    }
+
+    
 
     const [images] = useState<IImage[]>(
         [
@@ -53,11 +92,25 @@ const Home = () => {
   return (
     <>
         <Layout>
+            <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+                <ModalOverlay />
+                    <ModalContent>
+                    <ModalHeader>Autoriser l'analyse Google Analytics</ModalHeader>
+                    <ModalCloseButton />
+                    <ModalBody>
+                        Voulez-vous autoriser l'utilisation de google analytics pour améliorer votre expérience utilisateur ?
+                    </ModalBody>
+                    <ModalFooter>
+                        <Button onClick={() => handleGoogleAnalytics()}>Oui</Button>
+                        <Button ml={2} onClick={() => setIsOpen(false)}>Non</Button>
+                    </ModalFooter>
+                </ModalContent>
+            </Modal>
             <section className="shadow-md">
                 <Carousel items={images}/>
             </section>
             <article className="px-20 mt-10">
-                <h2 className="text-4xl">VéloEco +</h2>
+                <h1 className="text-4xl">VéloEco +</h1>
                 <hr className="my-4 border rounded border-gray-300" />
                 <section className="flex flex-col md:flex-row items-stretch justify-center">
                     {cards.map((card) => (

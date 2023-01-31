@@ -2,13 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Layout from './components/template/Layout';
 import Home from './pages/Home';
 import VenteVelos from './pages/VenteVelos';
 import Informations from './pages/Informations';
 import Entretien from './pages/Entretien';
 import LocationVelos from './pages/LocationVelos';
 import VentePieces from './pages/VentePieces';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
           <Route path='/entretient_velo' element={<Entretien />} />
           <Route path='/location_velo' element={<LocationVelos />} />
           <Route path='/vente_piece' element={<VentePieces />} />
+          <Route path='*' element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

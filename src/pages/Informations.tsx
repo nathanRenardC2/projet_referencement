@@ -10,8 +10,8 @@ const Informations = () => {
                         <p className="py-6">Vous cherchez à acheter un vélo électrique fiable et performant ? Nous offrons des options de location de vélos électriques pour vous permettre de découvrir les avantages de la conduite électrique.
                         Vous êtes un passionné de vélo électrique et vous recherchez des accessoires pour améliorer votre expérience de conduite
                         ?</p>
-                        <p className="font-bold">Nous avons tout ce qu'il vous faut, des cadenas aux béquilles, en passant par les batteries et les pièces détachées.
-                        Prenez soin de votre vélo électrique en optant pour nos services d'entretien professionnel.</p>
+                        <strong className="font-bold">Nous avons tout ce qu'il vous faut, des cadenas aux béquilles, en passant par les batteries et les pièces détachées.
+                        Prenez soin de votre vélo électrique en optant pour nos services d'entretien professionnel.</strong>
                     </section>
                     <section className="box-content hidden md:block w-1/5 p-4">
                         <img src="https://img.freepik.com/photos-gratuite/reparateur-qualifie-travaille-machine-outil-dans-atelier-bucycle-tres-frequente_613910-21483.jpg?w=740&t=st=1675152991~exp=1675153591~hmac=f84792dc63a5d31ba94f80a1b469642c398a93b5110a957764c1bb315aa0898b" alt="image_illustrative" className="w-full" />
