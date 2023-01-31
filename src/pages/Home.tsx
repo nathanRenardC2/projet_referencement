@@ -11,7 +11,16 @@ import logo_durabilitrip from '../assets/images/logo-partenaire.png';
 import logo_intersport from '../assets/images/logo-intersport.png';
 import { Button, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay } from "@chakra-ui/react";
 
-const Home = () => {
+interface IVenteVelosProps{
+    pageName: string;
+}
+const Home = ({pageName} : IVenteVelosProps) => {
+
+    useEffect(() => {
+        document.title = pageName;
+      }, [pageName]);
+
+
     const [isOpen, setIsOpen] = useState(false);
     const [googleAnalytics, setGoogleAnalytics] = useState(localStorage.getItem('googleAnalytics') === 'false' ? false : true);
 
@@ -19,6 +28,7 @@ const Home = () => {
         if(localStorage.getItem('googleAnalytics')) {
             if(localStorage.getItem('googleAnalytics') === 'true') {
                 setGoogleAnalytics(true);
+                handleGoogleAnalytics();
             } else {
                 setGoogleAnalytics(false);
             }

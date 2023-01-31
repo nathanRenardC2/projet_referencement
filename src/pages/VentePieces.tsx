@@ -1,11 +1,18 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ArticleVente from "../components/atoms/ArticleVente"
 import Layout from "../components/template/Layout"
 import bequille from '../assets/images/bequille.webp';
 import roue from '../assets/images/roue.png';
 import guidon from '../assets/images/guidon.jpg';
 
-const VentePieces = () => {
+interface IVenteVelosProps{
+    pageName: string;
+}
+const VentePieces = ({pageName} : IVenteVelosProps) => {
+
+    useEffect(() => {
+        document.title = pageName;
+      }, [pageName]);
 
     const [articles, setArticles] = useState<IArticle[]>([
         {

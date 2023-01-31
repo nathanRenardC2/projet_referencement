@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 import Layout from "../components/template/Layout"
 
-const NotFound = () => {
+interface IVenteVelosProps{
+    pageName: string;
+}
+const NotFound = ({pageName} : IVenteVelosProps) => {
+
+    useEffect(() => {
+        document.title = pageName;
+      }, [pageName]);
+
     return (
         <Layout>
             <main className="bg-gray-200 w-full px-16 md:px-0 h-screen flex items-center justify-center">

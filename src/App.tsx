@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
@@ -14,13 +13,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/vente_velo' element={<VenteVelos />} />
-          <Route path='/informations' element={<Informations />} />
-          <Route path='/entretient_velo' element={<Entretien />} />
-          <Route path='/location_velo' element={<LocationVelos />} />
-          <Route path='/vente_piece' element={<VentePieces />} />
-          <Route path='*' element={<NotFound />} />
+          <Route path='/' element={<Home  pageName='VéloEco+ | Vélos électriques ecolologique sur Grenoble' />} />
+          <Route path='/vente_velo' element={<VenteVelos pageName='VéloEco+ | Achat de vélos électriques' />} />
+          <Route path='/informations' element={<Informations pageName='VéloEco+ | Informations' />} />
+          <Route path='/entretien_velo' element={<Entretien pageName='VéloEco+ | Entretenir son vélo électrique' />} />
+          <Route path='/location_velo' element={<LocationVelos pageName='VéloEco+ | Location de vélos éléctriques' />} />
+          <Route path='/vente_piece' element={<VentePieces pageName='VéloEco+ | Achat de pièces détachées'  />} />
+          <Route path='*' element={<NotFound pageName='VéloEco+ | 404 - Page non trouvée' />} />
       </Routes>
     </BrowserRouter>
   );

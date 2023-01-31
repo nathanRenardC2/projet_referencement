@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 import Layout from "../components/template/Layout"
 
-const Informations = () => {
+interface IVenteVelosProps{
+    pageName: string;
+}
+const Informations = ({pageName} : IVenteVelosProps) => {
+
+    useEffect(() => {
+        document.title = pageName;
+      }, [pageName]);
+      
     return (
         <Layout>
             <main className="flex flex-col justify-center items-center py-10">

@@ -6,8 +6,18 @@ import speedometer from "../assets/images/speedometer-outline.svg";
 import water from "../assets/images/water-outline.svg";
 import batterie from "../assets/images/batterie-outline.svg";
 import Layout from "../components/template/Layout";
+import { useEffect } from "react";
 
-const Entretien = () => {
+interface IVenteVelosProps{
+    pageName: string;
+}
+const Entretien = ({pageName} : IVenteVelosProps) => {
+
+    useEffect(() => {
+        document.title = pageName;
+      }, [pageName]);
+
+
     return (
         <Layout>
             <main className="flex flex-col justify-center items-center pt-20 py-6">

@@ -34,7 +34,7 @@ const Layout = ({children} : ILayoutProps) => {
                         <NavLink to="/vente_piece" className={(isActive) => `block py-2 pl-3 pr-4 hover:text-gray-700 rounded md:bg-transparent text-gray-500 md:p-0`}>
                             Vente pièces détachés
                         </NavLink>
-                        <NavLink to="/entretient_velo" className={(isActive) => `block py-2 pl-3 pr-4 hover:text-gray-700 rounded md:bg-transparent text-gray-500 md:p-0`}>
+                        <NavLink to="/entretien_velo" className={(isActive) => `block py-2 pl-3 pr-4 hover:text-gray-700 rounded md:bg-transparent text-gray-500 md:p-0`}>
                             Entretien vélo
                         </NavLink>
                         <NavLink to="/informations" className={(isActive) => `block py-2 pl-3 pr-4 hover:text-gray-700 rounded md:bg-transparent text-gray-500 md:p-0`}>
