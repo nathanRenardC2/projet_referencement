@@ -1,8 +1,3 @@
 # https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow: /informations
-
-User-agent: *
-Disallow: /entretien_velo
 
 Sitemap: https://projet-referencement.vercel.app/sitemap.xml
