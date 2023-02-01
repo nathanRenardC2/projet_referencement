@@ -7,10 +7,6 @@ interface IVenteVelosProps{
 }
 const VenteVelos = ({pageName} : IVenteVelosProps) => {
 
-    useEffect(() => {
-        document.title = pageName;
-      }, [pageName]);
-
     const [articles, setArticles] = useState<IArticle[]>([
         {
             title: "Vélo de route",
@@ -35,17 +31,24 @@ const VenteVelos = ({pageName} : IVenteVelosProps) => {
         },
     ])
 
+
     return (
         <Layout>
             <div className="pt-10 min-h-screen px-20">
-                <h1 className="text-4xl font-bold text-center mb-3 md:text-start">Vente vélo éléctrique</h1>
-            <div className="grid grid-cols-1 md:grid-cols-3">
-                {articles.map((article, index) => (
+                <div className="flex justify-between px-8">
+                    <h1 className="text-4xl font-bold text-center mb-3 md:text-start">Vente vélo éléctrique</h1>
+                </div>
+            <div className={`grid grid-cols-1 ${articles.length > 0 ? "md:grid-cols-3" : "md:grid-cols-1"}`}>
+                {articles.length > 0 ? articles.map((article, index) => (
                     <div key={index}>
                         <ArticleVente key={index} title={article.title} description={article.description} image={article.image} prix={article.prix} tag={article.tag}/>
                     </div>
                     
-                ))}
+                )) : 
+                <div className="flex justify-center items-center h-screen w-full">
+                    <p className="text-2xl font-bold text-center mb-3 md:text-center">Aucun article trouvé</p>
+                </div>
+                }
             </div>
 
             </div>

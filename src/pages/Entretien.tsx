@@ -20,7 +20,7 @@ const Entretien = ({pageName} : IVenteVelosProps) => {
 
     return (
         <Layout>
-            <main className="flex flex-col justify-center items-center pt-20 py-6">
+            <div className="flex flex-col justify-center items-center pt-20 py-6">
                 <h1 className="text-4xl font-bold text-center mb-3 md:text-start">Entretenir son véloEco+</h1>
                 <p className="py-3 text-center mb-3 md:text-start">Prendre soin de votre vélo électrique est essentiel pour garantir une performance fiable, une conduite en toute sécurité
                 et une durée de vie maximale</p>
@@ -70,7 +70,7 @@ const Entretien = ({pageName} : IVenteVelosProps) => {
                         </div>
                     </section>
                 </article>
-            </main>
+            </div>
         </Layout>
     )
 }
