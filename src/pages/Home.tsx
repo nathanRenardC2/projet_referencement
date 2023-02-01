@@ -18,6 +18,7 @@ const Home = ({pageName} : IVenteVelosProps) => {
 
     useEffect(() => {
         document.title = pageName;
+        document.querySelector('meta[name="description"]')!.setAttribute("content", "VéloEco+ est une application qui vous permet d'acheter ou de louer un vélo à Grenoble. Choisissez parmi une large sélection de vélos et réservez en ligne. Livraison et retrait en magasin.");
       }, [pageName]);
 
 
