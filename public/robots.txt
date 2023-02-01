@@ -4,3 +4,5 @@ Disallow: /informations
 
 User-agent: *
 Disallow: /entretien_velo
+
+Sitemap: https://projet-referencement.vercel.app/sitemap.xml
