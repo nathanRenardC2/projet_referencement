@@ -121,22 +121,22 @@ const Home = ({pageName} : IVenteVelosProps) => {
                 <Carousel items={images}/>
             </section>
             <article className="px-20 mt-10">
-                <h1 className="text-4xl">VéloEco +</h1>
+                <h1 className="text-2xl md:text-4xl">VéloEco +</h1>
                 <hr className="my-4 border rounded border-gray-300" />
-                <section className="flex flex-col md:flex-row items-stretch justify-center">
+                <section className="flex flex-col md:flex-row items-center md:items-stretch justify-center">
                     {cards.map((card) => (
                         <Card key={card.id} title={card.title} description={card.description} image={card.image}/>
                     ))}
                 </section>
             </article>
             <article className="px-20 mt-10">
-                <h2 className="text-4xl">Partenaires</h2>
+                <h2 className="text-2xl md:text-4xl">Partenaires</h2>
                 <hr className="my-4 border rounded border-gray-300" />
                 <div className="flex flex-col md:flex-row justify-center items-center pt-10 md:px-36">
-                    <a className="flex flex-col justify-center items-center mr-20 mb-5 md:mb-0 w-96" href="https://durabilitrip.netlify.app/">
+                    <a className="flex flex-col justify-center items-center md:mr-20 mb-5 md:mb-0 md:w-96" href="https://durabilitrip.netlify.app/">
                         <img src={logo_durabilitrip} alt="logo partenaire Durabilitrip" />
                     </a>
-                    <a className="flex flex-col justify-center items-center mr-20 mb-5 md:mb-0 w-96" href="https://www.intersport.fr/">
+                    <a className="flex flex-col justify-center items-center md:mr-20 mb-5 md:mb-0 md:w-96" href="https://www.intersport.fr/">
                         <img src={logo_intersport} alt="logo partenaire intersport" />
                     </a>
                 </div>
